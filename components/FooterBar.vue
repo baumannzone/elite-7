@@ -6,10 +6,11 @@
       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
           <div class="space-y-8 xl:col-span-1">
+            <!-- Logo, Social, Description-->
             <img class="h-10" src="/elite7-blanco.png" alt="Elite 7 Asesor" />
             <p class="text-gray-400 text-base">
-              Making the world a better place through constructing elegant
-              hierarchies.
+              Ayudamos a las empresas a crear un mundo mejor. Consultoría y
+              asesoría.
             </p>
             <div class="flex space-x-6">
               <a href="#" class="text-gray-300 hover:text-gray-500">
@@ -97,42 +98,15 @@
                 <h3
                   class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
                 >
-                  Solutions
+                  {{ cols[0].title }}
                 </h3>
                 <ul class="mt-4 space-y-4">
-                  <li>
+                  <li v-for="item in cols[0].items" :key="item.text">
                     <a
-                      href="#"
+                      :href="item.link"
                       class="text-base text-gray-300 hover:text-white"
                     >
-                      Marketing
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-300 hover:text-white"
-                    >
-                      Analytics
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-300 hover:text-white"
-                    >
-                      Commerce
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-300 hover:text-white"
-                    >
-                      Insights
+                      {{ item.text }}
                     </a>
                   </li>
                 </ul>
@@ -141,42 +115,15 @@
                 <h3
                   class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
                 >
-                  Support
+                  {{ cols[1].title }}
                 </h3>
                 <ul class="mt-4 space-y-4">
-                  <li>
+                  <li v-for="item in cols[1].items" :key="item.text">
                     <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
+                      :href="item.link"
+                      class="text-base text-gray-300 hover:text-white"
                     >
-                      Pricing
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Documentation
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Guides
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      API Status
+                      {{ item.text }}
                     </a>
                   </li>
                 </ul>
@@ -187,51 +134,15 @@
                 <h3
                   class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
                 >
-                  Company
+                  {{ cols[2].title }}
                 </h3>
                 <ul class="mt-4 space-y-4">
-                  <li>
+                  <li v-for="item in cols[2].items" :key="item.text">
                     <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
+                      :href="item.link"
+                      class="text-base text-gray-300 hover:text-white"
                     >
-                      About
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Blog
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Jobs
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Press
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Partners
+                      {{ item.text }}
                     </a>
                   </li>
                 </ul>
@@ -240,33 +151,15 @@
                 <h3
                   class="text-sm font-semibold text-gray-400 tracking-wider uppercase"
                 >
-                  Legal
+                  {{ cols[3].title }}
                 </h3>
                 <ul class="mt-4 space-y-4">
-                  <li>
+                  <li v-for="item in cols[3].items" :key="item.text">
                     <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
+                      :href="item.link"
+                      class="text-base text-gray-300 hover:text-white"
                     >
-                      Claim
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Privacy
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="#"
-                      class="text-base text-gray-500 hover:text-gray-900"
-                    >
-                      Terms
+                      {{ item.text }}
                     </a>
                   </li>
                 </ul>
@@ -276,15 +169,58 @@
         </div>
         <div class="mt-12 border-t border-gray-700 pt-8">
           <p class="text-base text-gray-400 xl:text-center">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2021 Elite 7 Asesor. Todos los derechos reservados.
           </p>
         </div>
       </div>
     </footer>
   </section>
 </template>
+
 <script>
 export default {
   name: 'FooterBar',
+  data() {
+    return {
+      cols: [
+        {
+          title: 'Solutions',
+          items: [
+            { text: 'Marketing', link: '#' },
+            { text: 'Analytics', link: '#' },
+            { text: 'Commerce', link: '#' },
+            { text: 'Insights', link: '#' },
+          ],
+        },
+        {
+          title: 'Support',
+          items: [
+            { text: 'Pricing', link: '#' },
+            { text: 'Documentation', link: '#' },
+            { text: 'Guides', link: '#' },
+            { text: 'API Status', link: '#' },
+          ],
+        },
+        {
+          title: 'Company',
+          items: [
+            { text: 'About', link: '#' },
+            { text: 'Jobs', link: '#' },
+            { text: 'Blog', link: '#' },
+            { text: 'Press', link: '#' },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            { text: 'Claim', link: '#' },
+            { text: 'Privacy', link: '#' },
+            { text: 'Terms', link: '#' },
+            { text: 'Item 4', link: '#' },
+          ],
+        },
+      ],
+    }
+  },
 }
 </script>
