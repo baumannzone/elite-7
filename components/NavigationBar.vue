@@ -14,13 +14,14 @@
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a
+              <NuxtLink
                 v-for="item in navItems"
                 :key="item.displayText"
-                href="#"
-                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-500"
-                >{{ item.displayText }}</a
+                :to="item.to"
+                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
               >
+                {{ item.displayText }}
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -84,15 +85,7 @@
       Mobile menu, toggle classes based on menu state.
       Menu open: "block", Menu closed: "hidden"
     -->
-    <transition
-      enter-active-class="transition ease-out duration-100"
-      enter-class="transform opacity-0 scale-95"
-      enter-to-class="transform opacity-100 scale-100"
-      leave-active-class="transition ease-in duration-75"
-      leave-class="transform opacity-100 scale-100"
-      leave-to-class="transform opacity-0 scale-95"
-    >
-      <!--
+    <!--
         Entering: "transition ease-out duration-100"
         From: "transform opacity-0 scale-95"
         To: "transform opacity-100 scale-100"
@@ -100,35 +93,31 @@
         From: "transform opacity-100 scale-100"
         To: "transform opacity-0 scale-95"
        -->
-      <div v-show="showMenu">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <!--
+    <div v-show="showMenu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <!--
           Current: "bg-gray-900 text-white",
           Default: "text-gray-300 hover:bg-gray-700 hover:text-white"
         -->
-          <a
-            v-for="item in navItems"
-            :key="item.displayText"
-            href="#"
-            class="block text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
-          >
-            {{ item.displayText }}
-          </a>
-          <!-- <a
-         class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-        </a>-->
-        </div>
+        <NuxtLink
+          v-for="item in navItems"
+          :key="item.displayText"
+          :to="item.to"
+          class="block text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
+        >
+          {{ item.displayText }}
+        </NuxtLink>
       </div>
-    </transition>
+    </div>
   </nav>
 </template>
 
 <script>
 const navItems = [
-  { displayText: 'Inicio' },
-  { displayText: 'Servicios' },
-  { displayText: 'Quiénes Somos' },
-  { displayText: 'Contacto' },
+  { displayText: 'Inicio', to: '/' },
+  { displayText: 'Servicios', to: '/servicios' },
+  { displayText: 'Quiénes Somos', to: '/quienes-somos' },
+  { displayText: 'Contacto', to: '/contacto' },
 ]
 export default {
   name: 'NavigationBar',
@@ -140,3 +129,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.nuxt-link-active {
+  @apply bg-gray-900;
+}
+</style>
