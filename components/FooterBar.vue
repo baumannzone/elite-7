@@ -169,7 +169,8 @@
         </div>
         <div class="mt-12 border-t border-gray-700 pt-8">
           <p class="text-base text-gray-400 xl:text-center">
-            &copy; 2021 Elite 7 Asesor. Todos los derechos reservados.
+            Todos los derechos reservados · &copy; 2021 Consultores y Asesores
+            Élite 7, S.L.
           </p>
         </div>
       </div>

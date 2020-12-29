@@ -131,7 +131,7 @@ export default {
 </script>
 
 <style>
-.nuxt-link-active {
+.nuxt-link-exact-active {
   @apply bg-gray-900;
 }
 </style>
