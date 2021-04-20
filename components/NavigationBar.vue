@@ -116,7 +116,6 @@
 const navItems = [
   { displayText: 'Inicio', to: '/' },
   { displayText: 'Servicios', to: '/servicios' },
-  { displayText: 'Quiénes Somos', to: '/quienes-somos' },
   { displayText: 'Contacto', to: '/contacto' },
 ]
 export default {
