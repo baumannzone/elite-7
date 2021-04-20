@@ -15,8 +15,9 @@
               Consultores y asesores.
             </p>
             <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-              Consultoría y asesoramiento fiscal, contable, jurídico y laboral
-              para particulares o empresas.
+              Somos una empresa que cuenta con profesionales con una experiencia
+              superior a 30 años. Consultoría y asesoramiento fiscal, contable,
+              jurídico y laboral para particulares o empresas.
             </p>
           </div>
         </div>

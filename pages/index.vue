@@ -4,16 +4,20 @@
 
     <ServicesSection />
 
-    <MoreServicesSection />
+    <ContactSection />
   </div>
 </template>
 
 <script>
 import HeaderSection from '~/components/home/HeaderSection'
 import ServicesSection from '~/components/home/ServicesSection'
-import MoreServicesSection from '~/components/home/MoreServicesSection'
+import ContactSection from '~/components/home/ContactSection'
 
 export default {
-  components: { MoreServicesSection, ServicesSection, HeaderSection },
+  components: {
+    HeaderSection,
+    ServicesSection,
+    ContactSection,
+  },
 }
 </script>
