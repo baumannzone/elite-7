@@ -35,13 +35,6 @@ export default {
           'Consultoría y asesoramiento fiscal, contable, jurídico y laboral',
         name: 'Elite Asesor',
         telephone: '91 3304996',
-      },
-      structuredData2: {
-        '@context': 'https://schema.org',
-        '@type': ['LocalBusiness'],
-        name: 'Elite Asesor',
-        description:
-          'Consultoría y asesoramiento fiscal, contable, jurídico y laboral',
         openingHours: [
           'Mo-Th 09:00-14:00',
           'Mo-Th 15:30-19:30',
@@ -49,6 +42,7 @@ export default {
         ],
         currenciesAccepted: 'EUR',
         url: 'https://elite7.netlify.app/',
+        image: 'https://elite7.netlify.app/elite7-blanco.png',
       },
     }
   },
