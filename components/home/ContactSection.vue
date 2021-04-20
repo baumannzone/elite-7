@@ -73,16 +73,18 @@
             <h2
               class="text-base text-red-600 font-semibold tracking-wide uppercase"
             >
-              Contacto
+              Contacta con nosotros
             </h2>
             <p
               class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
             >
-              Mapa
+              Dónde estamos
             </p>
             <p class="mt-4 text-lg leading-6 text-gray-500">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat
-              massa dictumst amet. Sapien tortor lacus arcu.
+              C/ Alcalde Angel Arroyo, 10. Planta 1ª, oficina 1-2.
+            </p>
+            <p class="mb-4 text-lg leading-6 text-gray-500">
+              28904, Getafe, Madrid.
             </p>
           </div>
           <div class="mt-12">
@@ -95,15 +97,9 @@
               >
                 <div>
                   <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
-                    Dirección
+                    Contacto
                   </h2>
                   <div class="mt-3">
-                    <p class="text-lg text-gray-500">
-                      C/ Alcalde Angel Arroyo, 10, 28904.
-                    </p>
-                    <p class="text-lg text-gray-500">Getafe, Madrid.</p>
-                  </div>
-                  <div class="mt-9">
                     <div class="flex">
                       <div class="flex-shrink-0">
                         <svg
@@ -122,8 +118,10 @@
                           />
                         </svg>
                       </div>
-                      <div class="ml-3 text-base text-gray-500">
-                        <p>91 330 49 96</p>
+                      <div class="ml-3 text-lg text-gray-500">
+                        <p>
+                          <a href="tel:91 330 49 96">91 330 49 96</a>
+                        </p>
                       </div>
                     </div>
                     <div class="mt-3 flex">
@@ -144,7 +142,7 @@
                           />
                         </svg>
                       </div>
-                      <div class="ml-3 text-base text-gray-500">
+                      <div class="ml-3 text-lg text-gray-500">
                         <p class="break-all">administracion@eliteasesor.com</p>
                       </div>
                     </div>
