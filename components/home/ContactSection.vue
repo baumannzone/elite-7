@@ -123,7 +123,7 @@
                         </svg>
                       </div>
                       <div class="ml-3 text-base text-gray-500">
-                        <p>+1 (555) 123 4567</p>
+                        <p>91 330 49 96</p>
                       </div>
                     </div>
                     <div class="mt-3 flex">
