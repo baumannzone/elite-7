@@ -21,7 +21,7 @@ export default {
   },
   data() {
     return {
-      structuredData1: {
+      structuredData: {
         '@context': 'http://schema.org',
         '@type': 'LocalBusiness',
         address: {
@@ -48,10 +48,7 @@ export default {
   },
   head() {
     return {
-      script: [
-        { type: 'application/ld+json', json: this.structuredData1 },
-        { type: 'application/ld+json', json: this.structuredData2 },
-      ],
+      script: [{ type: 'application/ld+json', json: this.structuredData }],
     }
   },
 }
