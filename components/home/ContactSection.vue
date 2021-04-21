@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-50">
     <div class="py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative max-w-7xl mx-auto">
         <svg
           class="absolute left-full transform translate-x-1/4"
           width="404"
@@ -92,7 +92,9 @@
         <div class="mt-8">
           <div class="max-w-7xl mx-auto">
             <div class="mx-auto md:grid md:grid-cols-2 md:gap-8">
-              <div class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+              <div
+                class="py-16 px-4 sm:px-6 lg:px-8 bg-white rounded shadow-sm"
+              >
                 <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
                   Contacto
                 </h2>
@@ -145,7 +147,9 @@
                   </div>
                 </div>
               </div>
-              <div class="py-16 px-4 sm:px-6 lg:px-8 mt-8 md:mt-0 bg-white">
+              <div
+                class="py-16 px-4 sm:px-6 lg:px-8 mt-8 md:mt-0 bg-white rounded shadow-sm"
+              >
                 <h2 class="text-2xl font-extrabold text-gray-900 sm:text-3xl">
                   Horario
                 </h2>
