@@ -4,7 +4,7 @@
       <!-- This example requires Tailwind CSS v2.0+ -->
       <div class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="lg:text-center">
+          <div class="text-center">
             <h2
               class="text-base text-red-600 font-semibold tracking-wide uppercase"
             >
@@ -21,7 +21,7 @@
             </p>
           </div>
 
-          <div class="mt-10">
+          <div class="mt-14">
             <dl
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
             >

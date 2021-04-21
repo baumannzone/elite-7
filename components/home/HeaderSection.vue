@@ -1,7 +1,7 @@
 <template>
   <section class="section-header bg-gray-50">
     <div class="container">
-      <div class="">
+      <div>
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <div class="text-center">
             <h2
@@ -12,11 +12,11 @@
             <p
               class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"
             >
-              Consultores y asesores.
+              Consultores y asesores
             </p>
             <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">
-              Somos una empresa que cuenta con profesionales con una experiencia
-              superior a 30 años. Consultoría y asesoramiento fiscal, contable,
+              Somos una empresa formada por profesionales con más de 30 años de
+              experiencia. Consultoría y asesoramiento fiscal, contable,
               jurídico y laboral para particulares o empresas.
             </p>
           </div>
