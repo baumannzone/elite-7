@@ -2,7 +2,7 @@
   <div class="container">
     <section>
       <!-- This example requires Tailwind CSS v2.0+ -->
-      <div class="py-12 bg-white">
+      <div class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="lg:text-center">
             <h2
@@ -16,9 +16,8 @@
               Consultoría y asesoramiento
             </p>
             <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Consultores y asesores para ti o para tu empresa. Prestamos
-              servicios de consultoría y asesoramiento fiscal, contable,
-              jurídico y laboral.
+              Prestamos servicios de consultoría y asesoramiento fiscal,
+              contable, jurídico y laboral. Para ti o para tu empresa.
             </p>
           </div>
 
