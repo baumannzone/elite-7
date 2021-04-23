@@ -115,8 +115,8 @@
 <script>
 const navItems = [
   { displayText: 'Inicio', to: '/' },
-  { displayText: 'Servicios', to: '/servicios' },
-  { displayText: 'Contacto', to: '/contacto' },
+  // { displayText: 'Servicios', to: '/servicios' },
+  // { displayText: 'Contacto', to: '/contacto' },
 ]
 export default {
   name: 'NavigationBar',
