@@ -112,7 +112,7 @@
             </p>
           </div>
           <div class="mt-8">
-            <Map />
+            <TheMap />
           </div>
           <div class="mt-8">
             <div class="max-w-7xl mx-auto">
@@ -197,5 +197,11 @@
 </template>
 
 <script>
-export default {}
+import TheMap from '~/components/TheMap'
+
+export default {
+  components: {
+    TheMap,
+  },
+}
 </script>

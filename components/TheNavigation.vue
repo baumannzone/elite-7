@@ -17,7 +17,7 @@
                 v-for="item in navItems"
                 :key="item.displayText"
                 :to="item.to"
-                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
+                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white uppercase"
               >
                 {{ item.displayText }}
               </NuxtLink>

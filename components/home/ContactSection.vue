@@ -87,7 +87,7 @@
           </p>
         </div>
         <div class="mt-8">
-          <Map />
+          <TheMap />
         </div>
         <div class="mt-8">
           <div class="max-w-7xl mx-auto">
@@ -171,10 +171,10 @@
 </template>
 
 <script>
-import Map from '~/components/Map'
+import TheMap from '~/components/TheMap'
 
 export default {
   name: 'MoreServicesSection',
-  components: { Map },
+  components: { TheMap },
 }
 </script>
