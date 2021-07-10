@@ -116,6 +116,13 @@
           </div>
           <div class="mt-8">
             <div class="max-w-7xl mx-auto">
+              <div>
+                <div
+                  class="text-center my-10 text-base font-semibold tracking-wide uppercase"
+                >
+                  Contacta ahora con nosotros para más información
+                </div>
+              </div>
               <div class="mx-auto md:grid md:grid-cols-2 md:gap-8">
                 <div
                   class="py-16 px-4 sm:px-6 lg:px-8 bg-white rounded shadow-sm"

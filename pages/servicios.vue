@@ -108,9 +108,8 @@
                     </p>
                   </dt>
                   <dd class="mt-2 ml-16 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Asesoramiento en todo tipo de materia tributaria a empresas,
+                    autónomos y particulares.
                   </dd>
                 </div>
 
@@ -128,9 +127,8 @@
                     </p>
                   </dt>
                   <dd class="mt-2 ml-16 text-base text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Asesoramiento contable y concepción de contabilidades a
+                    entidades mercantiles y autónomos.
                   </dd>
                 </div>
               </dl>
@@ -223,9 +221,8 @@
                   Particulares o Empresas
                 </h3>
                 <p class="mt-3 text-lg text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit ex obcaecati natus eligendi delectus, cum deleniti
-                  sunt in labore nihil quod quibusdam expedita nemo.
+                  Resolvemos sus problemas, minimizamos sus riesgos y le
+                  ahorramos tiempo y recursos. ¡Llama ya!
                 </p>
 
                 <dl class="mt-10 space-y-10">
@@ -243,9 +240,8 @@
                       </p>
                     </dt>
                     <dd class="mt-2 ml-16 text-base text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      Asesoramiento en derecho mercantil, tributario y laboral.
+                      Derecho civil, penal y administrativo.
                     </dd>
                   </div>
 
@@ -263,9 +259,8 @@
                       </p>
                     </dt>
                     <dd class="mt-2 ml-16 text-base text-gray-500">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.
+                      Elaboración de nóminas, seguros sociales, impuestos.
+                      Altas, bajas, modificaciones en seguridad social.
                     </dd>
                   </div>
                 </dl>
@@ -327,6 +322,7 @@ import {
   SvgJuridico,
   SvgFiscal,
 } from '~/components/svgIcons/index.js'
+
 export default {
   name: 'Servicios',
   components: { SvgLaboral, SvgContable, SvgJuridico, SvgFiscal },
