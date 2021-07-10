@@ -17,7 +17,7 @@
                 v-for="item in navItems"
                 :key="item.displayText"
                 :to="item.to"
-                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white uppercase"
+                class="text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
               >
                 {{ item.displayText }}
               </NuxtLink>
@@ -85,7 +85,7 @@
 <script>
 const navItems = [
   { displayText: 'Inicio', to: '/' },
-  // { displayText: 'Servicios', to: '/servicios' },
+  { displayText: 'Servicios', to: '/servicios' },
   { displayText: 'Contacto', to: '/contacto' },
 ]
 export default {
@@ -106,6 +106,6 @@ export default {
 
 <style>
 .nuxt-link-exact-active {
-  @apply bg-red-900;
+  @apply bg-gray-500 text-white;
 }
 </style>
