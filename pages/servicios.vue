@@ -110,6 +110,32 @@
                   <dd class="mt-2 ml-16 text-base text-gray-500">
                     Asesoramiento en todo tipo de materia tributaria a empresas,
                     autónomos y particulares.
+                    <ul class="pt-2">
+                      <li
+                        v-for="(item, idx) in fiscalItems"
+                        :key="`item-${idx}`"
+                        class="pb-2 flex"
+                      >
+                        <svg
+                          class="flex-shrink-0 h-6 w-6 text-green-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="ml-3 text-base text-gray-500">
+                          {{ item }}
+                        </span>
+                      </li>
+                    </ul>
                   </dd>
                 </div>
 
@@ -129,6 +155,33 @@
                   <dd class="mt-2 ml-16 text-base text-gray-500">
                     Asesoramiento contable y concepción de contabilidades a
                     entidades mercantiles y autónomos.
+
+                    <ul class="pt-2">
+                      <li
+                        v-for="(item, idx) in contableItems"
+                        :key="`item-${idx}`"
+                        class="pb-2 flex"
+                      >
+                        <svg
+                          class="flex-shrink-0 h-6 w-6 text-green-500"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="ml-3 text-base text-gray-500">
+                          {{ item }}
+                        </span>
+                      </li>
+                    </ul>
                   </dd>
                 </div>
               </dl>
@@ -242,6 +295,33 @@
                     <dd class="mt-2 ml-16 text-base text-gray-500">
                       Asesoramiento en derecho mercantil, tributario y laboral.
                       Derecho civil, penal y administrativo.
+
+                      <ul class="pt-2">
+                        <li
+                          v-for="(item, idx) in juridicoItems"
+                          :key="`item-${idx}`"
+                          class="pb-2 flex"
+                        >
+                          <svg
+                            class="flex-shrink-0 h-6 w-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          <span class="ml-3 text-base text-gray-500">
+                            {{ item }}
+                          </span>
+                        </li>
+                      </ul>
                     </dd>
                   </div>
 
@@ -261,6 +341,33 @@
                     <dd class="mt-2 ml-16 text-base text-gray-500">
                       Elaboración de nóminas, seguros sociales, impuestos.
                       Altas, bajas, modificaciones en seguridad social.
+
+                      <ul class="pt-2">
+                        <li
+                          v-for="(item, idx) in laboralItems"
+                          :key="`item-${idx}`"
+                          class="pb-2 flex"
+                        >
+                          <svg
+                            class="flex-shrink-0 h-6 w-6 text-green-500"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                          <span class="ml-3 text-base text-gray-500">
+                            {{ item }}
+                          </span>
+                        </li>
+                      </ul>
                     </dd>
                   </div>
                 </dl>
@@ -326,5 +433,34 @@ import {
 export default {
   name: 'Servicios',
   components: { SvgLaboral, SvgContable, SvgJuridico, SvgFiscal },
+  data() {
+    return {
+      fiscalItems: [
+        'Asesoramiento en materia tributaria a empresas, autónomos y particulares.',
+        'Concepcion, revision y presentación de todo tipo de impuestos. ',
+        'Asesoramiento y planificación de inspecciones tributarias',
+      ],
+      contableItems: [
+        'Asesoramiento y concepción de contabilidades a entidades mercantiles y autónomos.',
+        'Información de novedades en materia contable.',
+        'Preparación y presentación de cuentas anuales.',
+        'Análisis de balance.',
+      ],
+      laboralItems: [
+        'Asesoramiento en materia de seguridad social.',
+        'Elaboración de nominas, seguros sociales, impuestos.',
+        'Altas, bajas,  modificaciones en seguridad social.',
+        'ERTEs, EREs.',
+        'Despidos.',
+      ],
+      juridicoItems: [
+        'Asesoramiento en derecho mercantil, tributario y laboral.',
+        'Derecho civil, penal y administrativo.',
+        'Concurso de acreedores, ',
+        'Herencias',
+        'Reclamaciones de cantidad',
+      ],
+    }
+  },
 }
 </script>
